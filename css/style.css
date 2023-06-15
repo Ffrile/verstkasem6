@@ -24,11 +24,14 @@ ul {
 }
 
 .header {
-    min-height: 75px;
     background: #222222;
+}
+
+.header-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 75px;
 }
 
 
@@ -45,9 +48,13 @@ ul {
 }
 
 .promo {
-    display: flex;
+
     background: #F1E4E6;
     margin: 0 auto 65px auto;
+}
+
+.promo-content {
+    display: flex;
 }
 
 .promo-img {}
@@ -263,6 +270,67 @@ ul {
 
     .hit-list {
         grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .center {
+        max-width: 375px;
+    }
+
+    .mobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-left {
+        padding-left: 16px;
+    }
+
+    .header-right-list {
+        gap: 0px;
+        padding-right: 16px;
+    }
+
+    .promo {
+        justify-content: center;
+    }
+
+    .promo-txt-title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .sales-list {
+        grid-template-columns: repeat(1, 343px);
+        gap: 32px;
+    }
+
+
+    .sales-img {
+        width: 343px;
+        height: 247px;
+    }
+
+    .bigimg {
+        width: 343px;
+        height: 111px;
+        background-size: cover;
+    }
+
+    .sales {
+        margin: 0 auto 64px auto;
+    }
+
+    .hit-list {
+        grid-template-columns: repeat(1, 360px);
         gap: 16px;
     }
 
